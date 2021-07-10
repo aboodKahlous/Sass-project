@@ -1,0 +1,128 @@
+// start footer
+.footer{
+    background-color: #EDF3F3;
+    color: $textcolor;
+    overflow-x: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    .gallary , .info , .contact{
+        float: $floatLeft;
+    }
+    
+    h2{
+        color: $headingcolor;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .gallary{
+        @media (min-width : 768px){
+            width : 100%;
+        }
+        @media (min-width : 992px){
+            width : 50%;
+        }
+        .img-box{
+            overflow: hidden;
+            margin-bottom: 10px ;
+        }
+        
+        img{
+            @media (min-width  : 768px){
+                float: $floatLeft;
+            }
+            width: 150px;
+            height: 150px;
+        }
+        .text{
+            @media (min-width  : 768px){
+                float: $floatLeft;
+                margin-right: 15px;
+                margin-left: 15px;
+                width: calc(100% - 180px);  
+            }
+
+            h4{
+                font-size: 23px;
+                margin-bottom: 0;
+                color: $maincolor;
+                margin: 5px 0;
+            }
+            p{
+                line-height: 1.4;
+            }
+        }
+    }
+    .info{
+        margin-top: 40px;
+        @media (min-width : 768px){
+            width :50%;
+        }
+        @media (min-width : 992px){
+            width : 25%;
+        }
+        width: 25%;
+        ul{
+            color: $textcolor;
+            line-height: 1.5;
+            li{
+                margin: 0;
+                line-height: 1.8;
+            }
+            span{
+                color: $maincolor;
+            }
+        }
+        h4{
+            color: $headingcolor;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        p{
+            color: $textcolor;
+            margin-top: 8px;
+        }
+    }
+    .contact{
+        margin-top: 40px;
+
+        @media (min-width : 768px){
+            width : 50%;
+        }
+        @media (min-width : 992px){
+            width : 25%;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea{
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 1px solid #fff;
+        }
+        textarea{
+            height: 140px;
+        }input[type="text"],
+        input[type="email"],
+        textarea:focus{
+            outline: none;
+        }
+    }
+    .copyright{
+        margin-top: 40px;
+        padding: 25px 0;
+        border-top: 1px solid #111;
+        overflow: hidden;
+        .text ,.designer{
+            float: $floatLeft;
+            width: 50%;
+        }
+        .designer{
+            text-align: $text-right;
+        }
+    }
+}
+
+// end footer

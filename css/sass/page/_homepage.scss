@@ -1,0 +1,188 @@
+// start slider 
+.slider{
+    position: relative;
+    // margin-top: 20px;
+    // padding: 20px 0; 
+    .slider-box{
+        position: absolute;
+        top: 35%;
+        left: 80px;
+        max-width: 40%;
+        @media (max-width : 767px){
+            position: absolute;
+            top: 25%;
+            left: 20px;
+            max-width: 40%;
+            font-size: 16px;
+        }
+        font: {
+            size: 24px;
+            style : italic;
+            weight : bold;
+        }
+        line-height: 1.7;
+        color: #fff;
+        font-family:  Arial, Helvetica, sans-serif;
+        width: 70%;
+        margin: 10px auto;
+        
+    }
+    
+    img{
+        width: 100%;
+    }
+    ul{
+        position: absolute;
+        left: 45%;
+        bottom: 30px;
+        text-align: center;
+        margin-top: 30px;
+        li{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: $maincolor;
+            border-radius: 50%;
+            border: 3px solid $maincolor;
+            cursor: pointer;
+            &.active,
+            &:hover{
+                background-color: $secoundcolor;
+            }
+        }
+    }
+}
+
+// end slider 
+
+// start services 
+
+.services{
+    
+    .services-box{
+        @media (min-width : 992px){
+            float: $floatLeft;
+            width: (100% / 3);
+            &:not(:last-of-type){
+                padding-right: 20px;
+            }
+        }
+        @media (max-width : 767px){
+            margin-bottom: 20px;
+            i{
+                display: block;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+        h3{
+            color: $headingcolor;
+            i{
+                color: $secoundcolor;
+                font-size: 40px;
+                position: relative;
+                top: 6px;
+            }
+        }
+
+        p{
+            font-size: 22px;
+            color: $textcolor;
+            line-height: 1.7;
+        }
+        .link{
+            text-decoration: none;
+            color: $maincolor;
+            margin-top: 10px;
+            a{
+                text-decoration: none;
+                color: $maincolor;
+            }
+        }
+    }
+}
+
+
+// end services 
+
+// start our-plarers
+
+.our-plarers{
+    margin-top: 40px;
+    .plarers-box{
+        margin-top: 50px;
+        width: (90% / 5);
+        @media (min-width : 768px){
+            float: $floatLeft;
+            width : (100% / 2);     
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        @media (min-width : 992px){
+            width : (100% / 3);     
+            text-align: left;
+            margin-bottom: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @media (min-width : 1200px){
+            width : (100% / 5);     
+        }
+        @media (max-width : 767px){
+            float: none;
+            width : 100%;
+            text-align: center;
+        }
+        img{
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+        h3{
+            color: $headingcolor;
+            span{
+                color: #222;
+                font-weight: bold;
+            }
+        }
+        p{
+            font-size: 22px;
+            color: $textcolor;
+            line-height: 1.5;
+        }
+        ul{
+            li{
+                display: inline-block;
+                margin: 5px;
+                font-size: 20px;
+                cursor: pointer;
+                color: $textcolor;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+
+// end our-plarers
+
+// start Loren-ipsum
+
+.Loren-ipsum{
+    .Loren-box{
+        margin-top: 50px;
+        float: $floatLeft;
+        width: (94% / 3);
+        &:not(:last-of-type){
+            margin-right: 3%;
+        }
+    }
+    .loren-img{
+        max-width: 100%;
+    }
+
+}
+
+
+// end Loren-ipsum
+
+
